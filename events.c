@@ -32,13 +32,13 @@ __FBSDID("$FreeBSD: head/usr.bin/calendar/events.c 367364 2020-11-05 08:58:21Z s
 
 #include <sys/time.h>
 #include <err.h>
+#include <langinfo.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #ifdef WITH_ICONV
 #include <iconv.h>
 #include <errno.h>
-#include <langinfo.h>
 
 static iconv_t conv = (iconv_t)-1;
 static char *currentEncoding = NULL;

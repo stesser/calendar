@@ -50,6 +50,7 @@ __FBSDID("$FreeBSD: head/usr.bin/calendar/io.c 367364 2020-11-05 08:58:21Z se $"
 #include <ctype.h>
 #include <err.h>
 #include <errno.h>
+#include <libutil.h>
 #include <locale.h>
 #include <pwd.h>
 #include <stdbool.h>
